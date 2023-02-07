@@ -13,12 +13,13 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { ref, onUpdated } from 'vue';
 import { useTaskStore } from "../stores/task";
 import { useRouter } from 'vue-router';
 import Nav from '../components/Nav.vue';
 import NewTask from '../components/NewTask.vue';
 import TaskItem from '../components/TaskItem.vue';
+
 
 const taskStore = useTaskStore();
 
@@ -31,6 +32,10 @@ const getTasks = async() => {
 };
 
 getTasks();
+
+onUpdated(() => {
+  getTasks()
+})
 
 </script>
 
