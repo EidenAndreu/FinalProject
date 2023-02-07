@@ -64,7 +64,7 @@ const signIn = async () => {
 
     try {
       // calls the user store and send the users info to backend to logIn
-      const user = await useUserStore().signIn(email.value, password.value);
+      await useUserStore().signIn(email.value, password.value);
       // redirects user to the homeView
       redirect.push({ path: "/" });
     } catch (error) {

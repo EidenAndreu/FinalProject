@@ -33,5 +33,15 @@ export const useTaskStore = defineStore("tasks", () => {
       id: id,
     });
   };
-  return { tasksArr, fetchTasks, addTask, deleteTask };
+
+  // editar tareas de supabase
+const editTask = async (id, title, description) => {
+  const { data, error } = await supabase.from("tasks").update({
+    title: title,
+    description: description,
+  }).match({ id: id });
+};
+
+  return { tasksArr, fetchTasks, addTask, deleteTask, editTask };
 });
+

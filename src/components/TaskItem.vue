@@ -1,6 +1,9 @@
 <template>
 <div class="container">
-    <h3>{{task.title}}</h3>
+    <h3 :class="taskCompleted ? 'case1': 'case2'">{{task.title}}</h3>
+    <p :class="taskCompleted ? 'case1': 'case2'">{{ task.description }}</p>
+    <button @click="toggleButton">Task completed</button>
+    <button @click="editTask">Edit {{ task.title }}</button>
     <button @click="deleteTask">Delete {{task.title}}</button>
 </div>
 </template>
@@ -21,9 +24,30 @@ const deleteTask = async() => {
     await taskStore.deleteTask(props.task.id);
 };
 
+const completedTask = ref(false)
+
+const editTask = async () => {
+  const newTitle = '';
+  const newDescription = '';
+  await taskStore.editTask(props.task.id, newTitle, newDescription);
+};
+
+const taskCompleted = ref(false)
+const toggleButton = () => {
+  taskCompleted.value = !taskCompleted.value;
+};
+
 </script>
 
-<style></style>
+<style>
+
+.case2{
+    text-decoration: none;
+}
+.case1{
+    text-decoration: line-through;
+}
+</style>
 
 <!--
 **Hints**
