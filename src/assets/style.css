@@ -48,7 +48,8 @@ TaskItem{
     align-items: space-between;
     align-content: center;
     margin: 0 2vw 0 0;
-    padding: 0.2% 1rem 0.2% 1rem
+    padding: 0.2% 1rem 0.2% 1rem;
+    box-shadow: -0.1rem 0.1rem 0 0rem var(--color1);
 }
 
 .container input{

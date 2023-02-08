@@ -5,7 +5,12 @@
     <div class="itemBtns">
     <button @click="completeTask">Completed</button>
     <button @click="showInput">Edit</button>
-    <button @click="deleteTask">Delete</button>
+    <button @click="showModalToggle">Delete</button>
+    <div class="modal" v-if="showModal">
+      <h2>Are you sure you want to delete:{{ task.title }}</h2>
+      <button @click="deleteTask">Yes</button>
+      <button @click="showModalToggle">Cancel</button>
+    </div>
     
     <div v-if="inputContainer">
         <input type="text" v-model="currentTaskTitle">
@@ -79,7 +84,10 @@ const completedTask = ref(false)
   const newDescription = '';
   await taskStore.editTask(props.task.id, newTitle, newDescription);
 }; */
-
+const showModal = ref(false);
+const showModalToggle = () => {
+  showModal.value = !showModal.value;
+};
 </script>
 
 <style>
