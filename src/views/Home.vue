@@ -3,14 +3,16 @@
     <Nav />
 
     <div class="content"> 
-      <h3>Your account:</h3>
-      <router-link to="/account">Account</router-link>
-    </div>
-    <NewTask />
+      <!-- <h3>Your account:</h3>
+      <router-link to="/account">Account</router-link> -->
+    
+    <NewTask class="newTask"/>
     <h1>Tasks:</h1>
-    <div >
-    <TaskItem  class="taskBox" v-for="task in tasks" :key="task.id" :task="task" @child-complete="completeTaskSupabase" @child-edit="editTaskSupabase"/>
   </div>
+    <div class="flex-container">
+    <div class="flex-items" >
+    <TaskItem  class="taskBox" v-for="task in tasks" :key="task.id" :task="task" @child-complete="completeTaskSupabase" @child-edit="editTaskSupabase"/>
+    </div></div>
    
   </div>
 </template>

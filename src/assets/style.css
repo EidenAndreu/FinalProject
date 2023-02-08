@@ -10,11 +10,12 @@
 
     /* Paleta de colores */
 
-    --color1: #032326;
-    --color2: #255459;
-    --color3: #177373;
-    --color4: #F27777;
-    --color5: #D98B8B;
+    --color1: #1B618C;
+    --color2: #04ADBF;
+    --color3: #6E8C03;
+    --color4: #465902;
+    --color5: #F2DCC9;
+    --test: rgba(1, 3, 35, 38);
 }
 
 /* SignIn Component */
@@ -27,15 +28,45 @@
 
 /* Home view */
 
+.wrapper{
+    /* background-image: url('https://elordenmundial.com/wp-content/uploads/2017/01/ESPACIO.jpg'); */
+/*     background-image: url('https://a.cdn-hotels.com/gdcs/production49/d1115/384d7c82-7494-45d7-8eb8-b2d46be78a33.jpg?impolicy=fcrop&w=800&h=533&q=medium'); */
+    /* object-fit:;
+     */
+   /*  background-color: var(--color5); */
+}
+
+/* .content, h3, router-link, h1, .newTask{
+    background-color: var(--color3);
+    
+} */
+
+.content{
+  /*   background-color: var(--color1); */
+    width: 50vw;
+    justify-items: center;
+    margin: auto;
+    padding: 1vw;
+    border-radius: 5%;
+    color: var(--color1)
+}
+
 /* Account View */
 
 /* Task Item Component */
 .container{
-    background: var(--color4);
+    background: var(--color5);
     padding: 2rem;
-    margin: 1rem 0;
+    margin: 0.5rem 0;
+    border-radius: 5%;
+    color: var(--color1)
+    /* background-color: 75%; */
     /* display:flex; */
     
+}
+
+.container p {
+    color:#000000
 }
 
 TaskItem{
@@ -50,6 +81,7 @@ TaskItem{
     margin: 0 2vw 0 0;
     padding: 0.2% 1rem 0.2% 1rem;
     box-shadow: -0.1rem 0.1rem 0 0rem var(--color1);
+    
 }
 
 .container input{
@@ -62,3 +94,28 @@ TaskItem{
 .container input:last-of-type{
         padding: 0.7rem 3rem
 }
+
+.taskBox{
+    display:flex;
+    flex-direction: column;
+    width: 25vw;
+    
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    align-content: space-around;
+  }
+  
+  /* .flex-items:nth-child {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+  } */

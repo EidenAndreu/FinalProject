@@ -17,7 +17,7 @@
         <input type="text" v-model="currentTaskDescription">
         <button @click="editTask">Edit task</button>
     </div>
-</div>
+    </div>
 </div>
 </template>
 
