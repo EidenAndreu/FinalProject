@@ -1,12 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap');
 :root {
     --colorWhite: #ffffff;
     --colorBlack: #000000;
     --colorRed: red;
     --fontSize-sm: 16px;
-    --fontFamily: 'Arial, Helvetica, sans-serif';
+    --fontFamily: 'Arial, Helvetica, sans-serif, Caveat';
     --fontTitle: 'Arial';
     --fontBody: 'Helvetica';
     --input: grey;
+    --otherText: 'Caveat'
 
     /* Paleta de colores */
 
@@ -28,19 +30,6 @@
 
 /* Home view */
 
-.wrapper{
-    /* background-image: url('https://elordenmundial.com/wp-content/uploads/2017/01/ESPACIO.jpg'); */
-/*     background-image: url('https://a.cdn-hotels.com/gdcs/production49/d1115/384d7c82-7494-45d7-8eb8-b2d46be78a33.jpg?impolicy=fcrop&w=800&h=533&q=medium'); */
-    /* object-fit:;
-     */
-   /*  background-color: var(--color5); */
-}
-
-/* .content, h3, router-link, h1, .newTask{
-    background-color: var(--color3);
-    
-} */
-
 .content{
   /*   background-color: var(--color1); */
     width: 50vw;
@@ -48,7 +37,7 @@
     margin: auto;
     padding: 1vw;
     border-radius: 5%;
-    color: var(--color1)
+    /* color: var(--color1) */
 }
 
 /* Account View */
@@ -60,19 +49,13 @@
     margin: 0.5rem 0;
     border-radius: 5%;
     color: var(--color1)
-    /* background-color: 75%; */
-    /* display:flex; */
     
 }
 
 .container p {
-    color:#000000
-}
-
-TaskItem{
-    display: flex;
-    flex-direction: row;
-    background-color: red;
+    color:#000000;
+    font-family: 'Caveat';
+    font-size: 1.2rem
 }
 
 .itemBtns button{
