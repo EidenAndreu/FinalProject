@@ -72,26 +72,22 @@ Tener un archivo README.md bien estructurado y bien documentado también puede s
 
 ## Acerca del Proyecto
 
-Este proyecto ha sido creado con los lenguajes HTML, CSS y JavaScript con el propósito de poner en práctica los conocimientos adquiridos a lo largo de estas tres semanas de Bootcamp simulando la elaboración de una página web de empresa.
+Este proyecto ha sido creado en VUE con los lenguajes HTML, CSS y JavaScript, utilizando Routers y Pinia, con el propósito de poner en práctica los conocimientos adquiridos a lo largo de estas tres semanas de Bootcamp simulando la elaboración de una página web de empresa.
 
 Para navegar por la página web hay distintas formas:
 En la barra de navegación tienes la posibilidad de acceder a las secciones de forma directa sin hacer scroll.
 Además, en cada sección hay habilitados botones por si el visitante tiene interés en conocer más a fondo aspectos de nuestra empresa.
 Hay una opción de hacer scroll top hasta arriba del todo de la página.
 
-Para hacer este proyecto, uno de los recursos más utilizados ha sido el repositorio creado en clase, accesible en el siguiente enlace:
-https://github.com/dzc1/class-jan09
 
-Este proyecto ha sido desarrollado por Rubén García y Eiden Andrés Reinaldo.
+Este proyecto ha sido desarrollado por Eiden Andrés Reinaldo.
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Construido Con
 
-Este proyecto ha sido desarrollado con HTML, CSS y JavaScript. Además, hemos aprovechado la tecnologia Json ( https://jsonplaceholder.typicode.com/posts/ )para subir los distintos formularios a la nube, apareciendo un mensaje de éxito o fracaso del envío según su estado.
-
-Para el apartado About Us, hemos utilizado los frames para añadir vídeos de YouTube sobre temas de nuestro interés, con el fin de que podáis conocernos a un nivel más personal.
+Este proyecto ha sido desarrollado con HTML, CSS y JavaScript. Además, hemos aprovechado la tecnologia de Supabase para crear y mantener una base de datos y añadir la opción de registrarse y logearse.
 
 Para controlar las versiones, hemos utilizado esta plataforma (GitHub). Esto nos ha ayudado a trabajar de forma síncrona y asíncrona de manera complementaria.
 
@@ -108,55 +104,37 @@ Para controlar las versiones, hemos utilizado esta plataforma (GitHub). Esto nos
 
 #### Day One
 
-###### Lunes 23, Enero 2023
+###### Martes 7, Febrero 2023
 
-- [x] organizar las tareas
-- [x] crear repositorio
-- [x] vincular Vercel
+- [x] Conectar base de datos y crear tablas para almacenarlos
+- [x] Crear repositorio
+- [x] Creación de cuenta: los usuarios podrán registrarse en la aplicación mediante un proceso de Sign Up, iniciar sesión con Log In y cerrar sesión con Log Out.
+- [ ] Gestión de tareas: los usuarios podrán crear, marcar como completadas o desmarcar, y eliminar tareas.
 
 #### Day Two
 
-###### Martes 24, Enero 2023
+###### Miércoles 8, Febrero 2023
 
-- [x] HTML Home
-- [x] HTML Projects
-- [x] HTML About Us
-- [x] HTML Contact Us
-
-- [x] CSS Home
-- [x] CSS About Us
-- [x] CSS Contact Us
+- [x] Crear README.md
+- [] Gestión de tareas: los usuarios podrán editar tareas.
+- [] 
 
 
 #### Day Three
 
-###### Miercoles 25, Enero 2023
+###### Jueves 9, Febrero 2023
 
-- [x] Puesta al dia
-- [x] CSS Projects
-- [x] index.js
-- [x] project.js
-- [x] contact-us.js
-- [x] CSS Home
-- [x] CSS About Us
-- [x] CSS Contact Us
 
 
 #### Day Four
 
-###### Jueves 26, Enero 2023
+###### Viernes 10, Febrero 2023
 
-- [x] Terminar de enlazar
-- [x] Responsive
-- [ ] Pantalla de carga
 
 #### Day Five
 
 ###### Viernes 27, Enero 2023
 
-- [x] Preparar presentación
-- [x] Terminar de redactar el README.md 
-- [x] Resolver errores
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -169,12 +147,8 @@ Eiden Andreu (25), administrativo e integrador social, así como estudiante del 
 email de contacto: eidenreinaldo@gmail.com
 GitHub: https://github.com/EidenAndreu
 
-Rubén García (35), antiguo vendedor y estudiante del Bootcamp Front-End de IronHack Barcelona.
-email: rubengarciagut@gmail.com
-GitHub: https://github.com/Aeneras/
 
-
-Link de presentación: https://www.canva.com/design/DAFY2m_dkzg/view
+Link de presentación: 
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -183,30 +157,15 @@ Link de presentación: https://www.canva.com/design/DAFY2m_dkzg/view
 
 ## agradecimientos
 
-A CSS Tricks, sin ti no habríamos podido maquetarlo.
 
-A ChatGPT, por tus largas horas de compañía.
-
-A Andrea, por su gran compañía. Ha sido un placer adoptarla.
-
-A la llorería de IronHack, por las tardes de sufrimiento compartido.
-
-A los profesores, por la paciencia y el aprendizaje.
-
-A Jarko, por las horas extras ayudándonos a entender GitHub y resolviendo conflictos que surgían durante la elaboración del proyecto.
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Desafío Técnico
 
-El mayor desafío técnico que nos hemos encontrado ha sido desarrollar algo tan grande como una página web con tantos elementos en un corto plazo de tiempo.
 
-Trabajar con GitHub y encontrarnos conflictos de combinación. La forma de resolverlos ha sido utilizar el comparador de código proporcionado por Visual Studio para poder comparar líneas y quedarnos las más adecuadas.
-para futuros desarrolladores que trabajen en el proyecto, ya que les brinda información valiosa sobre problemas potenciales y soluciones para superarlos.
 
 ## Grande Error
 
-Al combinar ramas en la fase final del proyecto mediante Git, nos encontramos con que se perdían partes de código por no mantener el main actualizado en la local.
-Las consecuencias han sido tener que rehacer parte del código cuando el proyecto, antes de combinar ramas, parecía estar completo.
-Para solucionar este error, hemos creado una rama nueva a partir de la que tenía el código más adaptado, en este caso la main, y a partir de ahí comparar con una rama anterior e ir haciendo copy-paste de las partes que nos interesaban.
+
