@@ -101,7 +101,7 @@ Para controlar las versiones, hemos utilizado esta plataforma (GitHub). Esto nos
 - [x] Conectar base de datos y crear tablas para almacenarlos
 - [x] Crear repositorio
 - [x] Creación de cuenta: los usuarios podrán registrarse en la aplicación mediante un proceso de Sign Up, iniciar sesión con Log In y cerrar sesión con Log Out.
-- [ ] Gestión de tareas: los usuarios podrán crear, marcar como completadas o desmarcar, y eliminar tareas.
+- [x] Gestión de tareas: los usuarios podrán crear, marcar como completadas o desmarcar, y eliminar tareas.
 
 #### Day Two
 
@@ -109,7 +109,9 @@ Para controlar las versiones, hemos utilizado esta plataforma (GitHub). Esto nos
 
 - [x] Crear README.md
 - [] Gestión de tareas: los usuarios podrán editar tareas.
-- [] 
+- [x] Gestión de tareas: los usuarios podrán marcar como completadas o desmarcar tareas. - Conectar con DB.
+
+
 
 
 #### Day Three
