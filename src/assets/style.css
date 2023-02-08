@@ -6,6 +6,7 @@
     --fontFamily: 'Arial, Helvetica, sans-serif';
     --fontTitle: 'Arial';
     --fontBody: 'Helvetica';
+    --input: grey;
 
     /* Paleta de colores */
 
@@ -32,6 +33,31 @@
 .container{
     background: var(--color4);
     padding: 2rem;
-    margin: 1rem 0
+    margin: 1rem 0;
+    /* display:flex; */
+    
 }
 
+TaskItem{
+    display: flex;
+    flex-direction: row;
+    background-color: red;
+}
+
+.itemBtns button{
+    align-items: space-between;
+    align-content: center;
+    margin: 0 2vw 0 0;
+    padding: 0.2% 1rem 0.2% 1rem
+}
+
+.container input{
+    display: flex;
+    flex-direction: column;
+    color:var(--input);
+    padding: 0 3rem
+}
+
+.container input:last-of-type{
+        padding: 0.7rem 3rem
+}

@@ -2,15 +2,17 @@
 <div class="container">
     <h3 :class="props.task.is_complete ? 'case1': 'case2'">{{task.title}}</h3>
     <p :class="props.task.is_complete ? 'case1': 'case2'">{{ task.description }}</p>
+    <div class="itemBtns">
     <button @click="completeTask">Completed</button>
-    <!-- <button @click="changeStatus" v-if="statusIcon">Task completed</button> -->
     <button @click="showInput">Edit</button>
     <button @click="deleteTask">Delete</button>
+    
     <div v-if="inputContainer">
         <input type="text" v-model="currentTaskTitle">
         <input type="text" v-model="currentTaskDescription">
         <button @click="editTask">Edit task</button>
     </div>
+</div>
 </div>
 </template>
 
