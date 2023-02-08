@@ -108,8 +108,11 @@ Para controlar las versiones, hemos utilizado esta plataforma (GitHub). Esto nos
 ###### Miércoles 8, Febrero 2023
 
 - [x] Crear README.md
-- [] Gestión de tareas: los usuarios podrán editar tareas.
+- [x] Gestión de tareas: los usuarios podrán editar tareas.
 - [x] Gestión de tareas: los usuarios podrán marcar como completadas o desmarcar tareas. - Conectar con DB.
+- [x] Gestión de tareas: pedir confirmación para eliminar las tareas.
+- [x] Crear tabla para el profile en supabase y conectar con el proyecto.
+- [x] CSS en Home
 
 
 
@@ -118,6 +121,9 @@ Para controlar las versiones, hemos utilizado esta plataforma (GitHub). Esto nos
 
 ###### Jueves 9, Febrero 2023
 
+- [ ] Crear la opción de editar el perfil del usuario en profile.
+- [ ] Crear reloj.
+- [ ] Continuar con CSS en Home.
 
 
 #### Day Four

@@ -79,11 +79,6 @@ const deleteTask = async() => {
 
 const completedTask = ref(false)
 
-/* const editTask = async () => {
-  const newTitle = '';
-  const newDescription = '';
-  await taskStore.editTask(props.task.id, newTitle, newDescription);
-}; */
 const showModal = ref(false);
 const showModalToggle = () => {
   showModal.value = !showModal.value;
