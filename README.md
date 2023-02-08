@@ -72,8 +72,6 @@ Tener un archivo README.md bien estructurado y bien documentado también puede s
 
 ## Acerca del Proyecto
 
-<img src="./resources/images/readMe/screenshot.png" alt="Logo" width="100%" height="50%">
-
 Este proyecto ha sido creado con los lenguajes HTML, CSS y JavaScript con el propósito de poner en práctica los conocimientos adquiridos a lo largo de estas tres semanas de Bootcamp simulando la elaboración de una página web de empresa.
 
 Para navegar por la página web hay distintas formas:
