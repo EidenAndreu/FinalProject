@@ -1,8 +1,9 @@
 <template>
 <div class="container">
-    <h3 :class="taskCompleted ? 'case1': 'case2'">{{task.title}}</h3>
-    <p :class="taskCompleted ? 'case1': 'case2'">{{ task.description }}</p>
-    <button @click="toggleButton">Task completed</button>
+    <h3 :class="props.task.is_complete ? 'case1': 'case2'">{{task.title}}</h3>
+    <p :class="props.task.is_complete ? 'case1': 'case2'">{{ task.description }}</p>
+    <button @click="completeTask">Task completed</button>
+    <!-- <button @click="changeStatus" v-if="statusIcon">Task completed</button> -->
     <button @click="editTask">Edit {{ task.title }}</button>
     <button @click="deleteTask">Delete {{task.title}}</button>
 </div>
@@ -12,6 +13,18 @@
 import { ref } from 'vue';
 import { useTaskStore } from '../stores/task';
 import { supabase } from '../supabase';
+
+//Definir emits para pasar lógica y eventos hacia componentes padres.
+const emit = defineEmits([
+    "childComplete" 
+])
+
+const completeTask = () => {
+    /* console.log("click"); */
+    
+    /* console.log(props.task.is_complete); */
+    emit("childComplete", props.task)
+}
 
 const taskStore = useTaskStore();
 
@@ -32,10 +45,18 @@ const editTask = async () => {
   await taskStore.editTask(props.task.id, newTitle, newDescription);
 };
 
-const taskCompleted = ref(false)
+/* const taskCompleted = ref(false)
 const toggleButton = () => {
   taskCompleted.value = !taskCompleted.value;
-};
+}; */
+
+/* let statusIcon = ref(true)
+const changeStatus = async() => {
+    await taskStore.changeTaskStatus(props.task.id, props.task.is_complete)
+    statusIcon = !statusIcon
+    console.log(statusIcon)
+}; */
+
 
 </script>
 

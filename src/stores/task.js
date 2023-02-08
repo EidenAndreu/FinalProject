@@ -42,6 +42,15 @@ const editTask = async (id, title, description) => {
   }).match({ id: id });
 };
 
-  return { tasksArr, fetchTasks, addTask, deleteTask, editTask };
+// completar tareas de supabase
+
+const completeTask = async (valorDeBooleano, id) => {
+  let { data: tasks, error } = await supabase
+    .from("tasks")
+    .update({ is_complete: valorDeBooleano })
+    .match({ id: id });
+};
+
+  return { tasksArr, fetchTasks, addTask, deleteTask, editTask, completeTask };
 });
 

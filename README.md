@@ -3,14 +3,6 @@ GITHUB COMMANDS
 
 git status && git add . &&
 git commit -m "Texto descriptivo de los cambios recientes" &&
-git push origin eiden
-
-git status && git add . &&
-git commit -m "Texto descriptivo de los cambios recientes" &&
-git push origin ruben
-
-git status && git add . &&
-git commit -m "Texto descriptivo de los cambios recientes" &&
 git push origin main
 
 git status && git pull origin main
