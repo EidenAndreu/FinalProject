@@ -59,7 +59,7 @@ const editTask = () => {
             description : currentTaskDescription.value,
             id: props.task.id
         };
-        emit('childEdit', newTaskEdited)
+        emit('childEdit', newTaskEdited )
 
     }
 }
@@ -88,6 +88,7 @@ const completedTask = ref(false)
 .case1{
     text-decoration: line-through;
 }
+
 </style>
 
 <!--

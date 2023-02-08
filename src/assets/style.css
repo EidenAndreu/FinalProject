@@ -1,4 +1,4 @@
-/* :root {
+:root {
     --colorWhite: #ffffff;
     --colorBlack: #000000;
     --colorRed: red;
@@ -6,7 +6,7 @@
     --fontFamily: 'Arial, Helvetica, sans-serif';
     --fontTitle: 'Arial';
     --fontBody: 'Helvetica';
-} */
+}
 
 /* SignIn Component */
 
@@ -19,3 +19,10 @@
 /* Home view */
 
 /* Account View */
+
+/* Task Item Component */
+.container{
+    background: var(--colorRed);
+    padding: 2rem;
+    margin: 1rem 0
+}
