@@ -8,7 +8,7 @@
     </div>
     <NewTask />
     <h1>Tasks:</h1>
-    <TaskItem v-for="task in tasks" :key="task.id" :task="task" @child-complete="completeTaskSupabase"/>
+    <TaskItem v-for="task in tasks" :key="task.id" :task="task" @child-complete="completeTaskSupabase" @child-edit="editTaskSupabase"/>
   </div>
 </template>
 
@@ -52,6 +52,15 @@ const completeTaskSupabase = async (taskObject) => {
   await taskStore.completeTask(changeTaskBooleanValue, taskId);
   //getTasks();
 };
+
+//Función para editar tarea conectándose con supabase
+const editTaskSupabase = async (editedTaskObject) => {
+  console.log("click");
+  console.log(editedTaskObject);
+  await taskStore.editTask(editedTaskObject.title, editedTaskObject.description, editedTaskObject.id)
+
+
+}
 
 </script>
 

@@ -4,8 +4,13 @@
     <p :class="props.task.is_complete ? 'case1': 'case2'">{{ task.description }}</p>
     <button @click="completeTask">Task completed</button>
     <!-- <button @click="changeStatus" v-if="statusIcon">Task completed</button> -->
-    <button @click="editTask">Edit {{ task.title }}</button>
+    <button @click="showInput">Edit {{ task.title }}</button>
     <button @click="deleteTask">Delete {{task.title}}</button>
+    <div v-if="inputContainer">
+        <input type="text" v-model="currentTaskTitle">
+        <input type="text" v-model="currentTaskDescription">
+        <button @click="editTask">Edit task</button>
+    </div>
 </div>
 </template>
 
@@ -16,7 +21,7 @@ import { supabase } from '../supabase';
 
 //Definir emits para pasar lógica y eventos hacia componentes padres.
 const emit = defineEmits([
-    "childComplete" 
+    "childComplete" , "childEdit"
 ])
 
 const completeTask = () => {
@@ -26,11 +31,39 @@ const completeTask = () => {
     emit("childComplete", props.task)
 }
 
+//Variable para usar la tienda fácil
 const taskStore = useTaskStore();
 
+//Variable para recibir información de la tarea mediante prop como .Objeto
 const props = defineProps({
     task: Object,
 });
+
+//Función para mostrar y ocultar inputs
+
+const inputContainer = ref(false);
+const currentTaskTitle = ref("");
+const currentTaskDescription = ref("");
+const showInput = () => {
+    console.log("click");
+    inputContainer.value = !inputContainer.value
+}
+
+// Función con validación + envío de datos y eventos mediante emit
+const editTask = () => {
+    if(currentTaskTitle.value.length === 0 || currentTaskDescription.value.length === 0){
+        alert("Title or description can not be empty")
+    }else{
+        const newTaskEdited = {
+            title : currentTaskTitle.value,
+            description : currentTaskDescription.value,
+            id: props.task.id
+        };
+        emit('childEdit', newTaskEdited)
+
+    }
+}
+
 
 // Función para borrar la tarea a través de la store. El problema que tendremos aquí (y en NewTask.vue) es que cuando modifiquemos la base de datos los cambios no se verán reflejados en el v-for de Home.vue porque no estamos modificando la variable tasks guardada en Home. Usad el emit para cambiar esto y evitar ningún page refresh.
 const deleteTask = async() => {
@@ -39,24 +72,11 @@ const deleteTask = async() => {
 
 const completedTask = ref(false)
 
-const editTask = async () => {
+/* const editTask = async () => {
   const newTitle = '';
   const newDescription = '';
   await taskStore.editTask(props.task.id, newTitle, newDescription);
-};
-
-/* const taskCompleted = ref(false)
-const toggleButton = () => {
-  taskCompleted.value = !taskCompleted.value;
 }; */
-
-/* let statusIcon = ref(true)
-const changeStatus = async() => {
-    await taskStore.changeTaskStatus(props.task.id, props.task.is_complete)
-    statusIcon = !statusIcon
-    console.log(statusIcon)
-}; */
-
 
 </script>
 

@@ -35,7 +35,7 @@ export const useTaskStore = defineStore("tasks", () => {
   };
 
   // editar tareas de supabase
-const editTask = async (id, title, description) => {
+const editTask = async (title, description, id) => {
   const { data, error } = await supabase.from("tasks").update({
     title: title,
     description: description,
