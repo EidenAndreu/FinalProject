@@ -6,6 +6,14 @@
     --fontFamily: 'Arial, Helvetica, sans-serif';
     --fontTitle: 'Arial';
     --fontBody: 'Helvetica';
+
+    /* Paleta de colores */
+
+    --color1: #032326;
+    --color2: #255459;
+    --color3: #177373;
+    --color4: #F27777;
+    --color5: #D98B8B;
 }
 
 /* SignIn Component */
@@ -22,7 +30,8 @@
 
 /* Task Item Component */
 .container{
-    background: var(--colorRed);
+    background: var(--color4);
     padding: 2rem;
     margin: 1rem 0
 }
+

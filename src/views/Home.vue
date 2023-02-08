@@ -8,7 +8,9 @@
     </div>
     <NewTask />
     <h1>Tasks:</h1>
-    <TaskItem  v-for="task in tasks" :key="task.id" :task="task" @child-complete="completeTaskSupabase" @child-edit="editTaskSupabase"/>
+    <div >
+    <TaskItem  class="taskBox" v-for="task in tasks" :key="task.id" :task="task" @child-complete="completeTaskSupabase" @child-edit="editTaskSupabase"/>
+  </div>
    
   </div>
 </template>

@@ -2,10 +2,10 @@
 <div class="container">
     <h3 :class="props.task.is_complete ? 'case1': 'case2'">{{task.title}}</h3>
     <p :class="props.task.is_complete ? 'case1': 'case2'">{{ task.description }}</p>
-    <button @click="completeTask">Task completed</button>
+    <button @click="completeTask">Completed</button>
     <!-- <button @click="changeStatus" v-if="statusIcon">Task completed</button> -->
-    <button @click="showInput">Edit {{ task.title }}</button>
-    <button @click="deleteTask">Delete {{task.title}}</button>
+    <button @click="showInput">Edit</button>
+    <button @click="deleteTask">Delete</button>
     <div v-if="inputContainer">
         <input type="text" v-model="currentTaskTitle">
         <input type="text" v-model="currentTaskDescription">
@@ -42,8 +42,8 @@ const props = defineProps({
 //Función para mostrar y ocultar inputs
 
 const inputContainer = ref(false);
-const currentTaskTitle = ref("");
-const currentTaskDescription = ref("");
+const currentTaskTitle = ref(props.task.title);
+const currentTaskDescription = ref(props.task.description);
 const showInput = () => {
     console.log("click");
     inputContainer.value = !inputContainer.value
