@@ -70,6 +70,26 @@ export const useUserStore = defineStore("user", {
     },
   },
 
+  async modifyProfile(newName, newWebsite, newNickName, newAvatarUrl) {
+    if (newName === null) {
+      newName = this.profile.name;
+    }
+    if (newWebsite === null) {
+      newWebsite = this.profile.website;
+    }
+    if (newAvatarUrl === null) {
+      newAvatarUrl = this.profile.image_src;
+    }
+    const { data, error } = await supabase
+      .from("profiles")
+      .update({
+        name: newName,
+        website: newWebsite,
+        image_src: newAvatarUrl,
+      })
+      .match({ id: this.profile.id });
+  },
+
   persist: {
     enabled: true,
     strategies: [

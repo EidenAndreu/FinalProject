@@ -1,8 +1,11 @@
 <template>
   <Nav />
-  <h1>Name: </h1>
+  <h1>Name: {{ username ? username.split("@")[0] : username}}</h1>
+  <h2>e-mail: {{ username }}</h2>
+  <h2>Website: {{ website }}</h2>
   <img :src="avatar_url ? avatar_url : 'https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__480.png'" alt="Profile picture">
   <div>
+    <button @click="editOption">Edit Profile</button>
   </div>
 </template>
 
@@ -20,6 +23,7 @@
   const website = ref(null);
   const avatar_url = ref(null);
   const redirect = useRouter();
+
 
   onMounted(() => {
     getProfile();
@@ -43,6 +47,11 @@
       loading.value = false
     }
   }
+
+  const editOption = () => {
+  console.log("click");
+  redirect.push({ path: "/edit" });
+};
 </script>
 
 <style>

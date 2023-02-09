@@ -10,9 +10,8 @@
     <h1>Tasks:</h1>
   </div>
     <div class="flex-container">
-    <div class="flex-items" >
     <TaskItem  class="taskBox" v-for="task in tasks" :key="task.id" :task="task" @child-complete="completeTaskSupabase" @child-edit="editTaskSupabase"/>
-    </div></div>
+    </div>
    
   </div>
 </template>
