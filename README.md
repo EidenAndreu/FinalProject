@@ -121,19 +121,39 @@ Para controlar las versiones, hemos utilizado esta plataforma (GitHub). Esto nos
 
 ###### Jueves 9, Febrero 2023
 
-- [ ] Crear la opción de editar el perfil del usuario en profile.
-- [ ] Crear reloj.
-- [ ] Continuar con CSS en Home.
+- [x] Crear la opción de editar el perfil del usuario en profile.
+- [x] Continuar con CSS en Home.
 
 
 #### Day Four
 
 ###### Viernes 10, Febrero 2023
-
+- [ ] Cambiar imagen en el editar perfil.
+- [ ] CSS
 
 #### Day Five
 
-###### Viernes 27, Enero 2023
+###### Lunes 13, Febrero 2023
+
+#### Day Six
+
+###### Martes 14, Febrero 2023
+
+#### Day Seven
+
+###### Miércoles 15, Febrero 2023
+
+#### Day Eight
+
+###### Jueves 16, Febrero 2023
+
+#### Day Nine
+
+###### Viernes 17, Febrero 2023
+
+#### Day Ten
+
+###### Lunes 20, Febrero 2023
 
 
 
