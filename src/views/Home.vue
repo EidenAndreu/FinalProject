@@ -1,14 +1,17 @@
 <template>
   <div class="wrapper">
+    <div class="navBar">
     <Nav />
+  </div>
 
     <div class="content"> 
       <!-- <h3>Your account:</h3>
       <router-link to="/account">Account</router-link> -->
     
     <NewTask class="newTask"/>
-    <h1>Tasks:</h1>
   </div>
+    <h1>Tasks:</h1>
+ 
     <div class="flex-container">
     <TaskItem  class="taskBox" v-for="task in tasks" :key="task.id" :task="task" @child-complete="completeTaskSupabase" @child-edit="editTaskSupabase"/>
     </div>

@@ -5,7 +5,7 @@
       Home
     </router-link>
 
-    <ul>
+    <ul class="navRouters">
         <li>
           <router-link to="/">Task Manager</router-link>
         </li>
@@ -18,7 +18,7 @@
     <div>
       <ul>
         <li class="log-out-welcome">
-          <p>Welcome, user</p>
+          <p>Welcome</p>
         </li>
         <li>
           <button @click="signOut" class="button">Log out</button>
