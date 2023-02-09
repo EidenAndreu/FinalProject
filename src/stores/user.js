@@ -70,22 +70,22 @@ export const useUserStore = defineStore("user", {
     },
   
 
-  async modifyProfile(newName, newWebsite, newAvatarUrl) {
-    if (newName === null) {
-      newName = this.profile.name;
+  async editProfile(updatedName, updatedWebsite, updatedAvatar) {
+    if (updatedName === null) {
+      updatedName = this.profile.name;
     }
-    if (newWebsite === null) {
-      newWebsite = this.profile.website;
+    if (updatedWebsite === null) {
+      updatedWebsite = this.profile.website;
     }
-    if (newAvatarUrl === null) {
-      newAvatarUrl = this.profile.image_src;
+    if (updatedAvatar === null) {
+      updatedAvatar = this.profile.image_src;
     }
     const { data, error } = await supabase
       .from("profiles")
       .update({
-        name: newName,
-        website: newWebsite,
-        image_src: newAvatarUrl,
+        name: updatedName,
+        website: updatedWebsite,
+        image_src: updatedAvatar,
       })
       .match({ id: this.profile.id });
   },

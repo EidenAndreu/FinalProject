@@ -2,11 +2,11 @@
     <Nav />
     <div>
       <label for="">name</label
-      ><input type="text" name="" id="" v-model="newName" />
+      ><input type="text" name="" id="" v-model="updatedName" />
       <label for="">website</label
-      ><input type="text" name="" id="" v-model="newWebsite" />
+      ><input type="text" name="" id="" v-model="updatedWebsite" />
       <label for="">avatar url</label
-      ><input type="text" name="" id="" v-model="newAvatarUrl" />
+      ><input type="text" name="" id="" v-model="updatedAvatar" />
       <button @click="updateProfile">Save changes</button>
     </div>
   </template>
@@ -25,10 +25,9 @@
   const website = ref(null);
   const avatar_url = ref(null);
   const name = ref(null);
-  /* ------- */
-  const newName = ref(username);
-  const newWebsite = ref(website);
-  const newAvatarUrl = ref(avatar_url);
+  const updatedName = ref(username);
+  const updatedWebsite = ref(website);
+  const updatedAvatar = ref(avatar_url);
   
   const redirect = useRouter();
   
@@ -57,14 +56,15 @@
   }
   
   const updateProfile = async () => {
-    await userStore.modifyProfile(
-      newName.value,
-      newWebsite.value,
-      newAvatarUrl.value
+    console.log("hola")
+    await userStore.editProfile(
+      updatedName.value,
+      updatedWebsite.value,
+      updatedAvatar.value
     );
-    newName.value = "";
-    newWebsite.value = "";
-    newAvatarUrl.value = "";
+    updatedName.value = "";
+    updatedWebsite.value = "";
+    updatedAvatar.value = "";
     redirect.push({ path: "/account" });
   };
   </script>
