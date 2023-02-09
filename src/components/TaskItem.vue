@@ -14,7 +14,7 @@
     
     <div v-if="inputContainer">
         <input type="text" v-model="currentTaskTitle">
-        <input type="text" v-model="currentTaskDescription">
+        <textarea name="" id="" cols="35" rows="3" v-model="currentTaskDescription"></textarea>
         <button @click="editTask">Edit task</button>
     </div>
     </div>

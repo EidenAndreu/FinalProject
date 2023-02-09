@@ -71,21 +71,24 @@ export const useUserStore = defineStore("user", {
   
 
   async editProfile(updatedName, updatedWebsite, updatedAvatar) {
+    let name =updatedName;
+    let website = updatedWebsite;
+    let avatar = updatedAvatar;
     if (updatedName === null) {
-      updatedName = this.profile.name;
+      name = this.profile.name;
     }
     if (updatedWebsite === null) {
-      updatedWebsite = this.profile.website;
+      website = this.profile.website;
     }
     if (updatedAvatar === null) {
-      updatedAvatar = this.profile.image_src;
+      avatar = this.profile.image_src;
     }
     const { data, error } = await supabase
       .from("profiles")
       .update({
-        name: updatedName,
-        website: updatedWebsite,
-        image_src: updatedAvatar,
+        username: name,
+        website: website,
+        image_src: avatar,
       })
       .match({ id: this.profile.id });
   },

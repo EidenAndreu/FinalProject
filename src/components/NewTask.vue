@@ -8,10 +8,12 @@
             <input type="text" placeholder="Add a Task Title" v-model="name">
         </div>
         <div class="input-field">
-            <input type="text" placeholder="Add a Task Description" v-model="description">
+            <textarea  name="" id="" cols="20" rows="2" placeholder="Add a Task Description" v-model="description"></textarea>
+           
         </div>
         <button @click="addTask" class="button">Add</button>
     </div>
+   
 </template>
 
 <script setup>
