@@ -7,7 +7,7 @@
       ><input type="text" name="" id="" v-model="newWebsite" />
       <label for="">avatar url</label
       ><input type="text" name="" id="" v-model="newAvatarUrl" />
-      <button @click="modifyProfile">Save changes</button>
+      <button @click="updateProfile">Save changes</button>
     </div>
   </template>
   
@@ -26,10 +26,9 @@
   const avatar_url = ref(null);
   const name = ref(null);
   /* ------- */
-  const newName = ref(null);
-  const newWebsite = ref(null);
-  const newNickName = ref(null);
-  const newAvatarUrl = ref(null);
+  const newName = ref(username);
+  const newWebsite = ref(website);
+  const newAvatarUrl = ref(avatar_url);
   
   const redirect = useRouter();
   
@@ -43,7 +42,6 @@
     avatar_url.value = userStore.profile.image_src;
     website.value = userStore.profile.website;
     name.value = userStore.profile.name;
-    nick_name.value = userStore.profile.nick_name;
   }
   
   async function signOut() {
@@ -58,16 +56,14 @@
     }
   }
   
-  const modifyProfile = async () => {
+  const updateProfile = async () => {
     await userStore.modifyProfile(
       newName.value,
       newWebsite.value,
-      newNickName.value,
       newAvatarUrl.value
     );
     newName.value = "";
     newWebsite.value = "";
-    newNickName.value = "";
     newAvatarUrl.value = "";
     redirect.push({ path: "/account" });
   };

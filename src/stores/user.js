@@ -68,9 +68,9 @@ export const useUserStore = defineStore("user", {
       const { error } = await supabase.auth.signOut();
       if (error) throw error;
     },
-  },
+  
 
-  async modifyProfile(newName, newWebsite, newNickName, newAvatarUrl) {
+  async modifyProfile(newName, newWebsite, newAvatarUrl) {
     if (newName === null) {
       newName = this.profile.name;
     }
@@ -89,6 +89,7 @@ export const useUserStore = defineStore("user", {
       })
       .match({ id: this.profile.id });
   },
+},
 
   persist: {
     enabled: true,
