@@ -7,6 +7,7 @@
   <div>
     <button @click="editOption">Edit Profile</button>
   </div>
+  <button @click="antigua">Avatar url</button>
 </template>
 
 <script setup>
@@ -24,6 +25,10 @@
   const avatar_url = ref(null);
   const redirect = useRouter();
 
+  function antigua(){
+    console.log(avatar_url.value);
+  }
+
 
   onMounted(() => {
     getProfile();
@@ -32,7 +37,9 @@
   async function getProfile() {
     await userStore.fetchUser();
     username.value = userStore.profile.username;
-    avatar_url.value = userStore.profile.avatar_url;
+    avatar_url.value = userStore.profile.image_src;
+    console.log(avatar_url.value);
+    console.log(userStore.profile);
     website.value = userStore.profile.website;
   }
 
