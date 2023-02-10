@@ -56,7 +56,6 @@
   }
   
   const updateProfile = async () => {
-    console.log("hola")
     await userStore.editProfile(
       updatedName.value,
       updatedWebsite.value,

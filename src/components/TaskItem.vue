@@ -32,9 +32,6 @@ const emit = defineEmits([
 ])
 
 const completeTask = () => {
-    /* console.log("click"); */
-    
-    /* console.log(props.task.is_complete); */
     emit("childComplete", props.task)
 }
 
@@ -52,7 +49,6 @@ const inputContainer = ref(false);
 const currentTaskTitle = ref(props.task.title);
 const currentTaskDescription = ref(props.task.description);
 const showInput = () => {
-    console.log("click");
     inputContainer.value = !inputContainer.value
 }
 

@@ -47,23 +47,23 @@ onUpdated(() => {
 //Funcion para completar tarea conectandose a Supabase
 const completeTaskSupabase = async (taskObject) => {
   // initial log to verifiy that is connected
-  console.log("click me");
+/*   console.log("click me"); */
   // log to verifiy that we are recievign the data from the childComp named "taskItem" and view it on the console
-  console.log(taskObject.id);
-  console.log(taskObject.is_complete);
+ /*  console.log(taskObject.id);
+  console.log(taskObject.is_complete); */
   // variable to store the OPPOSITE value of the data received from the child component with the logical operator "!" !===opposite
   let changeTaskBooleanValue = !taskObject.is_complete;
   let taskId = taskObject.id;
   // log to verify that we have changed correctly the value of the recived data
-  console.log(changeTaskBooleanValue, taskId);
+ /*  console.log(changeTaskBooleanValue, taskId); */
   await taskStore.completeTask(changeTaskBooleanValue, taskId);
   //getTasks();
 };
 
 //Función para editar tarea conectándose con supabase
 const editTaskSupabase = async (editedTaskObject) => {
-  console.log("click");
-  console.log(editedTaskObject);
+ /*  console.log("click");
+  console.log(editedTaskObject); */
   await taskStore.editTask(editedTaskObject.title, editedTaskObject.description, editedTaskObject.id)
 
 

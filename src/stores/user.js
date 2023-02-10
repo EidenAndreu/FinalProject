@@ -19,8 +19,8 @@ export const useUserStore = defineStore("user", {
         .match({ user_id: this.user.id })
 
         if (profile) this.profile = profile[0];
-        console.log('user in store: ', this.user);
-        console.log('profile in store: ', this.profile);
+        /* console.log('user in store: ', this.user);
+        console.log('profile in store: ', this.profile); */
       }
     },
 
@@ -32,7 +32,7 @@ export const useUserStore = defineStore("user", {
       if (error) throw error;
       if (user) {
         this.user = user;
-        console.log(this.user);
+        /* console.log(this.user); */
 
         const { data: profile } = await supabase.from('profiles').insert([
           {
@@ -60,7 +60,7 @@ export const useUserStore = defineStore("user", {
         .match({ user_id: this.user.id })
 
         if (profile) this.profile = profile[0];
-        console.log('profile in store: ', profile);
+        /* console.log('profile in store: ', profile); */
       }
     },
 
