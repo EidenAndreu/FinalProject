@@ -118,5 +118,7 @@ nav{
     justify-content: space-around;
     align-items: flex-start;
     align-content: space-around;
+    margin-left: 1.5vw;
+    margin-right: 1.5vw;
   }
   
