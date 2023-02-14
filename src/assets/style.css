@@ -32,7 +32,13 @@
 .navRouters{
     display:flex;
     flex-direction: row;
+    justify-content: space-between;
+    gap: 3rem
     
+}
+
+a{
+    text-decoration: none;
 }
 
 /* h1 {
@@ -72,7 +78,7 @@
 .container{
     
     background: var(--navBar);
-    padding: 2rem;
+    padding: 1rem 2rem;
     margin: 0.5rem 0;
     border-radius: 0 0 14% 0;
     color: var(--color1);
