@@ -2,7 +2,8 @@
   <nav>
     <!-- <PersonalRouter :route="route" :buttonText="buttonText" class="logo-link"/> -->
     <router-link to="/">
-      Home
+      <img style="width: 5vw;" src="../img/to-do-list.png" alt="">
+      <!-- Home -->
     </router-link>
 
     <ul class="navRouters">
@@ -64,7 +65,7 @@ const signOut = async () => {
 }
 
 nav {
-  background-color: lightgray;
+  /* background-color: lightgray; */
   display: flex;
   width: 100%;
   justify-content: space-around;
@@ -78,4 +79,5 @@ nav ul {
   flex-direction: column;
   align-items: center;
 }
+
 </style>

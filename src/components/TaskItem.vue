@@ -1,5 +1,6 @@
 <template>
 <div class="container">
+    <img src="../img/pin.png" alt="">
     <h3 :class="props.task.is_complete ? 'case1': 'case2'">{{task.title}}</h3>
     <p :class="props.task.is_complete ? 'case1': 'case2'">{{ task.description }}</p>
     <div class="itemBtns">
