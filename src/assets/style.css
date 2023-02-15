@@ -1,15 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Kalam:wght@300;400&display=swap');
+
 :root {
     --colorWhite: #ffffff;
     --colorBlack: #000000;
     --colorRed: red;
     --fontSize-sm: 16px;
-    --fontFamily: 'Arial, Helvetica, sans-serif, Caveat';
+    --fontFamily: 'Arial, Helvetica, sans-serif, Caveat, Amatic SC, Kalam';
     --fontTitle: 'Arial';
     --fontBody: 'Helvetica';
     --input: grey;
     --otherText: 'Caveat';
-
+    --titleOne: 'Amatic SC', cursive;
+    --titleTwo: 'Kalam', cursive;
     /* Paleta de colores */
 
     --color1: #8d8a66;
@@ -33,14 +36,32 @@
     display:flex;
     flex-direction: row;
     justify-content: space-between;
-    gap: 3rem
-    
+    gap: 10rem;
+    font-size: 0.75vw;
+    font-weight: bold;
+    font-family: var(--otherText);
+    /* 
+    text-shadow: 1px 1px 0px #000, -1px -1px 0px #000; */
 }
 
-a{
+
+
+.navBtn{
     text-decoration: none;
+    color:var(black);
+    background-color: var(--color5);
+    border-radius: 5px;
+    padding:0.7vw 2vw;
+    font-size: 1.7vw;
+    border-radius: 0 0 2vw 0 ;
 }
 
+.logOutBox{
+    background-color: var(--color5);
+    padding: 0.5vw 1vw;
+    border-radius: 0 0 2vw 0 ;
+}
+ 
 /* h1 {
     color: var(--colorRed);
 } */
@@ -51,6 +72,10 @@ a{
 
 .wrapper{
     background-image: url('https://st.depositphotos.com/1911991/1949/i/600/depositphotos_19491395-stock-photo-cork-texture.jpg');    
+}
+
+.inputGroup{
+    box-sizing:content-box;
 }
 
 
@@ -65,7 +90,9 @@ a{
     margin: 1vw auto;
     padding: 1vw;
     border-radius: 5%;
-    background-color: var(--color5);
+    /* background-color: var(--color5); */
+    background-image: url('../img/Paper.png');
+    font-family: var(--titleOne)
 }
 
 .content h1{

@@ -2,24 +2,25 @@
   <nav>
     <!-- <PersonalRouter :route="route" :buttonText="buttonText" class="logo-link"/> -->
     <router-link to="/">
-      <img style="width: 5vw;" src="../img/to-do-list.png" alt="">
+      <img class="imgNav" style="width: 5vw;" src="../img/to-do-list.png" alt="">
       <!-- Home -->
     </router-link>
 
     <ul class="navRouters">
         <li>
-          <router-link to="/">Task Manager</router-link>
+          <router-link to="/" class="navBtn">Task Manager</router-link>
         </li>
+       <!--  <li class="navBtn">Procrastinate</li> -->
 
         <li>
-          <router-link to="/account">Your Account</router-link>
+          <router-link to="/account" class="navBtn">Your Account</router-link>
         </li>
     </ul>
 
     <div>
-      <ul>
+      <ul class="logOutBox">
         <li class="log-out-welcome">
-          <p>Welcome</p>
+          <p>Welcome, {{ userEmail.split("@")[0] }}</p>
         </li>
         <li>
           <button @click="signOut" class="button">Log out</button>
