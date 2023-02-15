@@ -8,7 +8,7 @@
     <button @click="showInput">Edit</button>
     <button @click="showModalToggle">Delete</button>
     <div class="modal" v-if="showModal">
-      <h2>Are you sure you want to delete:{{ task.title }}</h2>
+      <h2>Are you sure you want to delete the task "{{ task.title }}" ?</h2>
       <button @click="deleteTask">Yes</button>
       <button @click="showModalToggle">Cancel</button>
     </div>

@@ -3,7 +3,7 @@
     <div v-if="showErrorMessage">
         <p class="error-text">{{ errorMessage }}</p>
     </div>
-    <div>
+    <div class="inputGroup">
         <div class="input-field">
             <input  type="text" placeholder="Add a Task Title" v-model="name">
         </div>

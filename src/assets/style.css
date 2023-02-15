@@ -62,10 +62,30 @@
     border-radius: 0 0 2vw 0 ;
 }
  
-/* h1 {
-    color: var(--colorRed);
-} */
+h1 {
+    font-family: var(--titleOne);
+    text-align: center;
+}
 
+.h1Tasks{
+    font-family: var(--titleOne);
+    text-align: center;
+   /*  background-color: var(--color5); */
+    padding: 0 1vw;
+    margin-top:4vw;
+    margin-bottom: 5vw;
+    
+}
+
+h3{
+    font-family: var(--titleOne);
+    font-size:2vw;
+}
+
+h2{
+    font-family: var(--titleTwo);
+    color:red
+}
 /* SignUp Component */
 
 /* Home view */
