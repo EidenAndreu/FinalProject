@@ -43,20 +43,22 @@
 
   /* Estilos para el título principal */
   h1 {
-    font-size: 2rem;
-  }
+      font-size: 2rem;
+    }
+    
+    /* Estilos para el subtitulo */
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    .profile-container {
+      display: inline-block;
+   /*  border: 1px solid black; */
+    padding: 10px;
+    margin:auto;
+    background-image: url('../img/Paper.png');
+    }
 
-  /* Estilos para el subtitulo */
-  h2 {
-    font-size: 1.5rem;
-  }
-
-  .profile-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-  }
   
   .profile-image {
     width: 150px;
@@ -86,12 +88,10 @@
     justify-content: center;
   }
 
-  .profile-container {
-    display: inline-block;
-  border: 1px solid black;
-  padding: 10px;
-  margin:auto;
-  }
+
+  .profile-page{
+    background-image: url('https://st.depositphotos.com/1911991/1949/i/600/depositphotos_19491395-stock-photo-cork-texture.jpg');    
+}
   
 
 /* NavBar */

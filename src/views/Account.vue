@@ -1,4 +1,5 @@
 <template>
+  <div class="profile-page">
   <Nav />
   <div class="profile-container">
   <div class="login-container">
@@ -14,6 +15,7 @@
       <button class="edit-button" @click="editOption">Edit Profile</button>
     </div>
   </div>
+</div>
 </div>
   
 </template>
