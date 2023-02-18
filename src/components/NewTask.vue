@@ -1,5 +1,5 @@
 <template>
-    <h1>Add a new Task</h1>
+    <h1 class="addTask">Add a new Task</h1>
     <div v-if="showErrorMessage">
         <p class="error-text">{{ errorMessage }}</p>
     </div>

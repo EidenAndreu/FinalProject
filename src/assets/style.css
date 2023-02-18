@@ -70,13 +70,20 @@ h1 {
 .h1Tasks{
     font-family: var(--titleOne);
     text-align: center;
-   /*  background-color: var(--color5); */
+    background-color: var(--color5);
     padding: 0 1vw;
     margin-top:4vw;
     margin-bottom: 5vw;
-    
+    width: fit-content;
+    display: flex;
+    margin-left: 45vw;
+    border-radius: 0 0 40% 0;
 }
 
+.addTask{
+    margin-top: 1vw;
+}
+    
 h3{
     font-family: var(--titleOne);
     font-size:2vw;
@@ -94,7 +101,7 @@ h2{
     background-image: url('https://st.depositphotos.com/1911991/1949/i/600/depositphotos_19491395-stock-photo-cork-texture.jpg');    
 }
 
-.inputGroup{
+.inputGroup, .input-field{
     box-sizing:content-box;
 }
 
