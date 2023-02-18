@@ -1,12 +1,21 @@
 <template>
   <Nav />
-  <h1>Name: {{ username ? username.split("@")[0] : username}}</h1>
-  <h2>e-mail: {{ username }}</h2>
-  <h2>Website: {{ website }}</h2>
-  <img :src="avatar_url ? avatar_url : 'https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__480.png'" alt="Profile picture">
-  <div>
-    <button @click="editOption">Edit Profile</button>
+  <div class="profile-container">
+  <div class="login-container">
+    <div class="login-text">
+    <h1>Name: {{ username ? username.split("@")[0] : username}}</h1>
+    <h2>e-mail: {{ email}}</h2>
+    <h2>Website: {{ website }}</h2>
   </div>
+  
+  <div class="editBtnAccount">
+    <img class="profile-picture" :src="avatar_url ? avatar_url : 'https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__480.png'" alt="Profile picture">
+    
+      <button class="edit-button" @click="editOption">Edit Profile</button>
+    </div>
+  </div>
+</div>
+  
 </template>
 
 <script setup>
@@ -23,6 +32,7 @@
   const website = ref(null);
   const avatar_url = ref(null);
   const redirect = useRouter();
+  const email = ref(null)
 
 
   onMounted(() => {
@@ -34,6 +44,8 @@
     username.value = userStore.profile.username;
     avatar_url.value = userStore.profile.image_src;
     website.value = userStore.profile.website;
+    email.value = supabase.auth.user().email;
+
   }
 
   async function signOut() {
