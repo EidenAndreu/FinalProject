@@ -10,25 +10,15 @@
       <span></span>
     </button> -->
 
-    <ul class="navRouters nav-menu" :class="{ active: showMenu }">
-      <li>
+    <span class="navRouters nav-menu" :class="{ active: showMenu }">
         <router-link to="/" class="navBtn">Task Manager</router-link>
-      </li>
-      <li>
+    
         <router-link to="/account" class="navBtn">Your Account</router-link>
-      </li>
-    </ul>
+      </span>
 
     <div>
-      <ul class="logOutBox">
-        <li class="log-out-welcome">
-          <p>Welcome, {{ userEmail.split("@")[0] }}</p>
-        </li>
-        <li>
-          <button @click="signOut" class="button">Log out</button>
-        </li>
-      </ul>
-    </div>
+        <button @click="signOut" class="button">Log out</button>
+         </div>
   </nav>
 </template>
 

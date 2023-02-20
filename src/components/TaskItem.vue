@@ -88,6 +88,7 @@ const showModalToggle = () => {
 
 .case2{
     text-decoration: none;
+    
 }
 .case1{
     text-decoration: line-through;

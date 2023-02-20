@@ -3,6 +3,7 @@
     <div class="navBar">
     <Nav />
   </div>
+  <br/><br/>
 
     <div class="content"> 
       <!-- <h3>Your account:</h3>
