@@ -131,9 +131,14 @@ Para controlar las versiones, hemos utilizado esta plataforma (GitHub). Esto nos
 - [x] Cambiar imagen en el editar perfil.
 - [x] Limpiar código de console.logs 
 - [x] Seguir con CSS
+
+
 #### Day Five
 
-###### Lunes 13, Febrero 2023
+###### Lunes 20, Febrero 2023
+- [ ] Seguir con CSS
+- [ ] Responsive
+- [ ] Account
 
 #### Day Six
 
