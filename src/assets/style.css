@@ -283,5 +283,80 @@ button, input {
     flex-direction: column;
     width: 50vw;
     box-shadow: -0.1rem 0.1rem 0 0rem var(--color1);
+    }
+
+    /* NavBar */
+/* nav{
+   background-color: #bb6841c5;
+   
 }
+ */
+.navRouters{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 2vw;
+    font-weight: bold;
+    font-family: var(--otherText);
+    /* 
+    text-shadow: 1px 1px 0px #000, -1px -1px 0px #000; */
+}
+
+
+.navBtn{
+    text-decoration: none;
+    color:var(black);
+    background-color: var(--color5);
+    border-radius: 5px;
+    font-size: 1.7vw;
+    border-radius: 0 0 2vw 0 ;
+}
+
+.navRouters {
+    /* background-color: lightgray; */
+    gap: 2vw;
+    font-size:20px
+  }
+    /* .hamburger {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: none;
+  }
+  
+  .hamburger span {
+    display: block;
+    height: 3px;
+    width: 25px;
+    margin-bottom: 5px;
+    position: relative;
+    background-color: black;
+    border-radius: 3px;
+    z-index: 1;
+  }
+  
+  .hamburger span:nth-child(2) {
+    margin-bottom: 0;
+  }
+
+  nav ul {
+    list-style: none;
+    padding-inline-start: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f5f5f5;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s ease-in-out;
+  }
+  
+  nav ul.show {
+    height: 200px;
+  } */
 }

@@ -5,8 +5,8 @@
   <div class="login-container">
     <div class="login-text">
     <h1>Name: {{ username ? username.split("@")[0] : username}}</h1>
-    <h2>e-mail: {{ email}}</h2>
-    <h2>Website: {{ website }}</h2>
+    <h3>e-mail: {{ email}}</h3>
+    <h3>Website: {{ website }}</h3>
   </div>
   
   <div class="editBtnAccount">

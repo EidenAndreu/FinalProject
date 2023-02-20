@@ -1,20 +1,22 @@
 <template>
-  <nav>
-    <!-- <PersonalRouter :route="route" :buttonText="buttonText" class="logo-link"/> -->
+ <nav>
     <router-link to="/">
       <img class="imgNav" style="width: 5vw;" src="../img/to-do-list.png" alt="">
-      <!-- Home -->
     </router-link>
 
-    <ul class="navRouters">
-        <li>
-          <router-link to="/" class="navBtn">Task Manager</router-link>
-        </li>
-       <!--  <li class="navBtn">Procrastinate</li> -->
+   <!--  <button class="hamburger" @click="toggleMenu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button> -->
 
-        <li>
-          <router-link to="/account" class="navBtn">Your Account</router-link>
-        </li>
+    <ul class="navRouters nav-menu" :class="{ active: showMenu }">
+      <li>
+        <router-link to="/" class="navBtn">Task Manager</router-link>
+      </li>
+      <li>
+        <router-link to="/account" class="navBtn">Your Account</router-link>
+      </li>
     </ul>
 
     <div>
@@ -35,8 +37,13 @@
 import { useUserStore } from "../stores/user";
 import { computed } from "vue";
 import { useRouter } from "vue-router";
-import { ref } from 'vue';
+import { ref, onMounted } from 'vue';
 
+const showMenu = ref(false);
+
+const toggleMenu = () => {
+  showMenu.value = !showMenu.value;
+};
 //constant to save a variable that will hold the use router method
 const route = "/";
 const buttonText = "Todo app";
@@ -57,6 +64,17 @@ const signOut = async () => {
     redirect.push({ path: "/auth/login" });
   } catch (error) {}
 };
+
+/* onMounted(() => {
+  const hamburger = document.querySelector(".hamburger")
+  const navMenu = document.querySelector(".nav-menu")
+
+  hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+  })
+}); */
+
 
 </script>
 
@@ -79,6 +97,26 @@ nav ul {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-menu {
+    display: none;
+  }
+
+  .nav-menu.active {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 </style>
