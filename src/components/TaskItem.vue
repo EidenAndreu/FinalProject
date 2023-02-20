@@ -5,8 +5,8 @@
     <p :class="props.task.is_complete ? 'case1': 'case2'">{{ task.description }}</p>
     <div class="itemBtns">
     <button @click="completeTask">Completed</button>
-    <button @click="showInput">Edit</button>
-    <button @click="showModalToggle">Delete</button>
+    <button @click="showInput"> Edit</button>
+    <button @click="showModalToggle"> Delete  </button>
     <div class="modal" v-if="showModal">
       <h2>Are you sure you want to delete the task "{{ task.title }}" ?</h2>
       <button @click="deleteTask">Yes</button>
@@ -17,8 +17,9 @@
         <input type="text" v-model="currentTaskTitle">
         <input type="text" v-model="currentTaskDescription">
         <button @click="editTask">Edit task</button>
+        
     </div>
-    </div>
+</div>
 </div>
 </template>
 
