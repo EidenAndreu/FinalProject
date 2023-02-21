@@ -1,17 +1,19 @@
 <template>
-    <h1 class="addTask">Add a new Task</h1>
+    <div class="addTaskContainer content">
+    <h1 class="addTask ">Add a new Task</h1>
     <div v-if="showErrorMessage">
         <p class="error-text">{{ errorMessage }}</p>
     </div>
     <div class="inputGroup">
-        <div class="input-field">
-            <input  type="text" placeholder="Add a Task Title" v-model="name">
+        <div >
+            <input class="input-field"  type="text" placeholder="Add a Task Title" v-model="name">
         </div>
-        <div class="input-field">
-            <input  type="text" placeholder="Add a Task Description" v-model="description">        
+        <div>
+            <input  class="input-field" type="text" placeholder="Add a Task Description" v-model="description">        
         </div>
         <button @click="addTask" class="button">Add</button>
     </div>
+</div>
    
 </template>
 

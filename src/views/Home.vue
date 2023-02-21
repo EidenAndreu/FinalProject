@@ -5,12 +5,12 @@
   </div>
   <br/><br/>
 
-    <div class="content"> 
+    <!-- <div class="content">  -->
       <!-- <h3>Your account:</h3>
       <router-link to="/account">Account</router-link> -->
     
     <NewTask class="newTask"/>
-  </div>
+  <!-- </div> -->
   <div>
     <h1 class="h1Tasks">Tasks:</h1>
   </div>
