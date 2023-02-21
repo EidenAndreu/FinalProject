@@ -1,13 +1,15 @@
 <template>
+  
     <Nav />
-    <div>
-      <label for="">name</label
+    <Account />
+    <div class="editProfileDiv">
+      <label for="">Name:</label
       ><input type="text" name="" id="" v-model="updatedName" />
-      <label for="">website</label
+      <label for="">Website:</label
       ><input type="text" name="" id="" v-model="updatedWebsite" />
-      <label for="">avatar url</label
+      <label for="">Avatar url:</label
       ><input type="text" name="" id="" v-model="updatedAvatar" />
-      <button @click="updateProfile">Save changes</button>
+      <button class="buttonChanges" @click="updateProfile">Save changes</button>
     </div>
   </template>
   
@@ -69,7 +71,41 @@
   </script>
 
   <style>
-img {
-  width: 200px;
-  border-radius: 50%;
-}</style>
+    /* Estilos para la etiqueta label */
+    label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+  }
+  
+  /* Estilos para el input de tipo texto */
+  input[type="text"] {
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+    border: 1px solid #ccc;
+    margin-bottom: 1rem;
+  }
+  
+  /* Estilos para el botón de guardar cambios */
+  .buttonChanges {
+    display: block;
+    margin: 1rem 0;
+    padding: 0.5rem 1rem;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+
+  .editProfileDiv{
+    margin-left: 25vw;
+    margin-top: 10vw;
+    background-image: url("src\img\Paper.png")
+  }
+  
+ </style>

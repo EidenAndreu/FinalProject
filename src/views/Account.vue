@@ -4,15 +4,15 @@
   <div class="profile-container">
   <div class="login-container">
     <div class="login-text">
-    <h1>Name: {{ username ? username.split("@")[0] : username}}</h1>
+    <h3>Name: {{ username ? username.split("@")[0] : username}}</h3>
     <h3>e-mail: {{ email}}</h3>
     <h3>Website: {{ website }}</h3>
+    <button class="edit-button" @click="editOption">Edit Profile</button>
   </div>
   
   <div class="editBtnAccount">
     <img class="profile-picture" :src="avatar_url ? avatar_url : 'https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__480.png'" alt="Profile picture">
     
-      <button class="edit-button" @click="editOption">Edit Profile</button>
     </div>
   </div>
 </div>
@@ -72,4 +72,7 @@ img {
   width: 200px;
   border-radius: 50%;
 }
+
+
+
 </style>

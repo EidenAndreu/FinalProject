@@ -311,6 +311,9 @@ button, input {
     /* padding: 15vw */
 }
 
+/* .button{
+  margin-right:0;
+} */
 /* .inputGroup{
   padding:10vw
 } */
@@ -375,8 +378,27 @@ button, input {
   }
 
   .profile-container{
-    margin:5vw
+    margin:5vw;
+    padding-left: 4vw;
   }
 
+  .profile-picture{
+    margin-top:5vw;
+    margin-left: -1.50vw;
+    width: 40vw;
+  }
 
+.edit-button{
+  margin-right: 0;
+}
+
+.login-text{
+  padding-left: 5vw;
+  
+}
+
+h1, h3{
+  font-family: 'Caveat';
+  font-size: medium;
+}
 }
