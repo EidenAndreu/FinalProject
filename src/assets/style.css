@@ -42,6 +42,11 @@ body{
     margin-top: 20px;
   }
 
+  .login-text{
+    padding-left: 5vw;
+    
+  }
+
   /* Estilos para los títulos */
   h1, h2 {
     text-align: center;
