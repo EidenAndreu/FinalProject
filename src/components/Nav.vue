@@ -16,6 +16,12 @@
       <router-link v-if="showMenu" to="/account" class="navBtn">Your Account</router-link>
     </span>
 
+    <span class="navRouters" >
+      <router-link to="/" class="navBtn1 navBtn">Task Manager</router-link>
+
+      <router-link to="/account" class="navBtn1 navBtn">Your Account</router-link>
+    </span>
+
     <div>
       <button @click="signOut" class="logout-button">Log out</button>
     </div>
@@ -71,11 +77,12 @@ nav {
 
 .nav-menu {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
 }
 
 .navBtn {
+  display:flex;
   margin: 1rem;
   color: #777;
   text-decoration: none;
@@ -186,6 +193,10 @@ nav {
 
   .hamburger.active span {
     background-color: #fff;
+  }
+
+  .navBtn1{
+    display: none
   }
 }
 
