@@ -66,13 +66,13 @@ body{
     }
     .profile-container {
       display: inline-block;
-   /*  border: 1px solid black; */
-    padding: 2vw;
-    margin:auto;
-    background-image: url('../img/Paper.png');
-    margin-left: 25vw;
-    margin-top:10vw;
-    border-radius: 0 0 5% 0;
+      padding: 2vw;
+      margin:auto;
+      background-image: url('../img/Paper.png');
+      margin-left: 22vw;
+      margin-top:10vw;
+     border-radius: 0 0 5% 0;
+     padding-left: 8vw;
    
     }
 

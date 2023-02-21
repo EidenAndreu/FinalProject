@@ -51,7 +51,9 @@ const inputContainer = ref(false);
 const currentTaskTitle = ref(props.task.title);
 const currentTaskDescription = ref(props.task.description);
 const showInput = () => {
+    if(!props.task.is_complete){
     inputContainer.value = !inputContainer.value
+    }
 }
 
 // Función con validación + envío de datos y eventos mediante emit
