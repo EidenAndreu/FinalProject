@@ -17,7 +17,7 @@
     </span>
 
     <div>
-      <button @click="signOut" class="button">Log out</button>
+      <button @click="signOut" class="logout-button">Log out</button>
     </div>
   </nav>
 </template>

@@ -121,11 +121,19 @@ body{
   
 
 /* NavBar */
-/* nav{
-   background-color: #bb6841c5;
-   
+.logout-button {
+  background-color: #ff6347;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
 }
- */
+
+.logout-button:hover {
+  background-color: #ff4136;
+}
 .navRouters{
     display:flex;
     flex-direction: row;
@@ -215,11 +223,35 @@ h2{
     border-radius: 5%;
     /* background-color: var(--color5); */
     background-image: url('../img/Paper.png');
+    background-position: center top;
     font-family: var(--titleOne)
 }
 
 .content h1{
     align-items:flex-end;
+}
+
+button {
+ /* font-size: 16px; */
+ padding: 0.5vw 0.5vw;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  /* margin: 5px; */
+}
+button.completed {
+  background-color: green;
+  color: white;
+}
+
+button.edit {
+  background-color: orange;
+  color: white;
+}
+
+button.delete {
+  background-color: red;
+  color: white;
 }
 
 /* Account View */
