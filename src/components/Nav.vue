@@ -162,15 +162,26 @@ nav {
   }
    .hamburger {
     display: block;
+    z-index:300
   }
 
   .nav-menu {
-    display: none;
+    /* display: none; */
+    position: absolute;
+    top: -100%;
+    gap: 0;
+    flex-direction: column;
+    background-color: #c8c8c8;
+    width: 50%;
+    text-align: left;
+    transition: top 0.5s;
+    left: 0%;
   }
 
   .nav-menu.active {
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: column; */
+    top: 40px
   }
 
   .hamburger.active span {
