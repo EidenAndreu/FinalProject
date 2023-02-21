@@ -98,6 +98,10 @@ body{
     margin: 0;
   }
   
+  .editBtnAccount{
+    margin-top: 2vw
+  }
+  
   .profile-details h2 {
     font-size: 1.5rem;
     margin: 0;
