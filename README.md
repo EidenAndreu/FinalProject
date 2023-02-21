@@ -142,12 +142,14 @@ Para controlar las versiones, hemos utilizado esta plataforma (GitHub). Esto nos
 #### Day Six
 
 ###### Martes 21, Febrero 2023
-- [ ] Responsive
-- [ ] Account
+- [x] Responsive
+- [x] Account
 
 #### Day Seven
 
-###### Miércoles 15, Febrero 2023
+###### Miércoles 22, Febrero 2023
+- [ ] Responsive del edit account
+- [] Footer
 
 #### Day Eight
 
