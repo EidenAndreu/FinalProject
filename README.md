@@ -136,13 +136,14 @@ Para controlar las versiones, hemos utilizado esta plataforma (GitHub). Esto nos
 #### Day Five
 
 ###### Lunes 20, Febrero 2023
-- [ ] Seguir con CSS
-- [ ] Responsive
-- [ ] Account
+- [x] Seguir con CSS
+
 
 #### Day Six
 
-###### Martes 14, Febrero 2023
+###### Martes 21, Febrero 2023
+- [ ] Responsive
+- [ ] Account
 
 #### Day Seven
 
