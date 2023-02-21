@@ -150,6 +150,7 @@ Para controlar las versiones, hemos utilizado esta plataforma (GitHub). Esto nos
 ###### Miércoles 22, Febrero 2023
 - [ ] Responsive del edit account
 - [ ] Footer
+- [ ] Menu hamburger
 
 #### Day Eight
 
