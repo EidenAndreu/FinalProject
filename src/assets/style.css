@@ -346,6 +346,9 @@ button, input {
   .addTaskContainer {
     display:flex;
     flex-direction: column;
+    width: 90%;
+    background-position: center top;
+    border-radius: 10%;
   }
 
   .input-field {
@@ -445,4 +448,7 @@ h1, h3{
   font-size: medium;
 }
 
+.itemBtns{
+  display:flex
+}
 }

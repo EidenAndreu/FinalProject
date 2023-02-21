@@ -1,101 +1,166 @@
 <template>
- <nav>
+  <nav>
+    <button @click="toggleMenuHamburger" class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
     <router-link to="/">
       <img class="imgNav" style="width: 5vw;" src="../img/to-do-list.png" alt="">
     </router-link>
 
-   <!--  <button class="hamburger" @click="toggleMenu">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button> -->
-
     <span class="navRouters nav-menu" :class="{ active: showMenu }">
-        <router-link to="/" class="navBtn">Task Manager</router-link>
-    
-        <router-link to="/account" class="navBtn">Your Account</router-link>
-      </span>
+      <router-link v-if="showMenu" to="/" class="navBtn">Task Manager</router-link>
+
+      <router-link v-if="showMenu" to="/account" class="navBtn">Your Account</router-link>
+    </span>
 
     <div>
-        <button @click="signOut" class="button">Log out</button>
-         </div>
+      <button @click="signOut" class="button">Log out</button>
+    </div>
   </nav>
 </template>
 
 <script setup>
-// import PersonalRouter from "./PersonalRouter.vue";
-import { useUserStore } from "../stores/user";
-import { computed } from "vue";
-import { useRouter } from "vue-router";
-import { ref, onMounted } from 'vue';
-
-const showMenu = ref(false);
-
-const toggleMenu = () => {
-  showMenu.value = !showMenu.value;
-};
-//constant to save a variable that will hold the use router method
-const route = "/";
-const buttonText = "Todo app";
-
-// constant to save a variable that will get the user from store with a computed function imported from vue
-// const getUser = computed(() => useUserStore().user);
-const getUser = useUserStore().user;
-
-// constant that calls user email from the useUSerStore
-const userEmail = getUser.email;
-
-// async function that calls the signOut method from the useUserStore and pushes the user back to the Auth view.
-const redirect = useRouter();
-
-const signOut = async () => {
-  try{
-    await useUserStore().signOut();
-    redirect.push({ path: "/auth/login" });
-  } catch (error) {}
-};
-
-/* onMounted(() => {
-  const hamburger = document.querySelector(".hamburger")
-  const navMenu = document.querySelector(".nav-menu")
-
-  hamburger.addEventListener("click", () => {
+  import { useUserStore } from "../stores/user";
+  import { computed } from "vue";
+  import { useRouter } from "vue-router";
+  import { ref, onMounted } from "vue";
+  
+  const showMenu = ref(false);
+  
+  const toggleMenuHamburger = () => {
+    showMenu.value = !showMenu.value;
+    const hamburger = document.querySelector(".hamburger");
     hamburger.classList.toggle("active");
-    navMenu.classList.toggle("active");
-  })
-}); */
+  };
 
+ /*  const toggleMenuHamburger = () => {
+    showMenu.value = !showMenu.value;
+  }; */
+
+  const getUser = useUserStore().user;
+  const userEmail = getUser.email;
+
+  const redirect = useRouter();
+
+  const signOut = async () => {
+    try {
+      await useUserStore().signOut();
+      redirect.push({ path: "/auth/login" });
+    } catch (error) {}
+  };
 
 </script>
 
+
 <style>
-.navbar-img {
-  width: 90px;
-}
-
 nav {
-  /* background-color: lightgray; */
   display: flex;
-  width: 100%;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+  padding: 1rem;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-nav ul {
-  list-style: none;
-  padding-inline-start: 0;
+.imgNav {
+  width: 5vw;
+  max-width: 100%;
+}
+
+.nav-menu {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+.navBtn {
+  margin: 1rem;
+  color: #777;
+  text-decoration: none;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.navBtn.active {
+  color: #000;
+  font-weight: bold;
+}
+
+.button {
+  background-color: #2962ff;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.button:hover {
+  background-color: #0039cb;
+}
+
 .hamburger {
   display: none;
   cursor: pointer;
+  padding: 10px;
+  background-color: transparent;
+  border: none;
 }
 
+.hamburger span {
+  display: block;
+  width: 30px;
+  height: 3px;
+  margin: 6px auto;
+  background-color: #000;
+  transition: transform 0.2s ease-out;
+}
+
+.hamburger.active span:first-of-type {
+  transform: translateY(9px) rotate(45deg);
+}
+
+.hamburger.active span:nth-of-type(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:last-of-type {
+  transform: translateY(-9px) rotate(-45deg);
+}
+
+
 @media (max-width: 768px) {
-  .hamburger {
+  .nav-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    width: 100%;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav-menu.active {
+    display: flex;
+  }
+
+  .navBtn {
+    display: block;
+    margin: 0.5rem 0;
+    font-size: 1.5rem;
+  }
+
+  .button {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+   .hamburger {
     display: block;
   }
 
@@ -106,6 +171,10 @@ nav ul {
   .nav-menu.active {
     display: flex;
     flex-direction: column;
+  }
+
+  .hamburger.active span {
+    background-color: #fff;
   }
 }
 
