@@ -88,6 +88,20 @@
     border: 1px solid #ccc;
     margin-bottom: 1rem;
   }
+
+  /* .inputGroup{
+    width: 50%;
+  border: 1px solid #ccc;
+  padding: 10px;
+  }
+
+  .input-field{
+    width: 100%;
+  border: none;
+  outline: none;
+  } */
+
+  
   
   /* Estilos para el botón de guardar cambios */
   .buttonChanges {
@@ -106,6 +120,27 @@
     margin-left: 25vw;
     margin-top: 10vw;
     background-image: url("src\img\Paper.png")
+  }
+
+  @media (max-width: 600px) {
+
+    
+    /* Alinear los campos de nombre, sitio web y avatar en columnas */
+    label, input[type="text"] {
+      display: block;
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+    
+    /* Alinear el botón de guardar cambios en el centro */
+    button {
+      margin: 1rem auto;
+    }
+
+    .editProfileDiv {
+  max-width: 600px;
+  margin: 0 auto;
+}
   }
   
  </style>
