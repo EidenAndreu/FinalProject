@@ -156,6 +156,7 @@ Para controlar las versiones, hemos utilizado esta plataforma (GitHub). Esto nos
 #### Day Eight
 
 ###### Jueves 23, Febrero 2023
+- [ ] Limpiar código
 - [ ] Preparar presentación 
 
 #### Day Nine
