@@ -310,6 +310,7 @@ button.delete {
 .itemBtns{
 /*    display: flex;
    flex-direction: row; */
+   display:flex;
    align-content: stretch;
    justify-content: space-around;
    align-items: baseline;
