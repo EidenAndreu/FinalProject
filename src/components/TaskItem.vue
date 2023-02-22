@@ -7,17 +7,18 @@
         <button class="completed" @click="completeTask">Completed</button>
         <button class="edit" v-if="!props.task.is_complete" @click="showInput" >Edit</button>
         <button class="delete" @click="showModalToggle">Delete</button> 
-    <div class="modal" v-if="showModal">
+    </div>
+    <div class="extensions">
+        <div class="modal" v-if="showModal">
       <h2>Are you sure you want to delete the task "{{ task.title }}" ?</h2>
       <button @click="deleteTask">Yes</button>
       <button @click="showModalToggle">Cancel</button>
     </div>
-    
     <div v-if="inputContainer">
         <input type="text" v-model="currentTaskTitle">
         <input type="text" v-model="currentTaskDescription">
         <button @click="editTask">Edit task</button>
-        
+    
     </div>
 </div>
 </div>

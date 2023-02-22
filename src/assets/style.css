@@ -306,7 +306,10 @@ button.delete {
     font-family: var(--fontFamShantell);
     /* font-size: 1.2rem */
 }
-
+.extensions {
+  display: flex;
+  flex-direction: column;
+}
 .itemBtns{
 /*    display: flex;
    flex-direction: row; */
