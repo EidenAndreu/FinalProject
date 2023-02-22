@@ -149,14 +149,16 @@ Para controlar las versiones, hemos utilizado esta plataforma (GitHub). Esto nos
 #### Day Seven
 
 ###### Miércoles 22, Febrero 2023
-- [ ] Responsive del edit account
-- [ ] Footer
-- [ ] CSS Menu hamburger
+- [x] Responsive del edit account
+- [x] Footer
+- [x] CSS Menu hamburger
 
 
 #### Day Eight
 
-###### Jueves 16, Febrero 2023
+###### Jueves 23, Febrero 2023
+- [ ] README
+- [ ] Presentación 
 
 #### Day Nine
 
