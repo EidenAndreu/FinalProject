@@ -10,8 +10,13 @@
       <router-link to="/account">Account</router-link> -->
     
     <NewTask class="newTask"/>
+
+    <div v-if="tasks.length === 0">
+      <h1 class="h1Tasks">Tasks:</h1>
+      <img class="noTask" src="https://media.tenor.com/fp4qkaHjuTIAAAAC/sponge-bob-to-do.gif" alt="No tasks found"/>
+    </div>
   <!-- </div> -->
-  <div>
+  <div v-else>
     <h1 class="h1Tasks">Tasks:</h1>
   </div>
     <div class="flex-container">
@@ -76,4 +81,6 @@ const editTaskSupabase = async (editedTaskObject) => {
 
 </script>
 
-<style></style>
+<style>
+
+</style>
