@@ -147,7 +147,8 @@ nav {
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: #fff;
+    background-color: var(--color5);
+    border-radius: 0 0 15% 0;
     width: 100%;
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
   }
@@ -178,7 +179,7 @@ nav {
     top: -100%;
     gap: 0;
     flex-direction: column;
-    background-color: #c8c8c8;
+   /*  background-color: #c8c8c8; */
     width: 50%;
     text-align: left;
     transition: top 0.5s;

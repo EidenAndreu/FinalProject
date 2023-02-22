@@ -483,4 +483,8 @@ h1, h3{
 .itemBtns{
   display:flex
 }
+
+.imgNav{
+    display:none
+}
 }
