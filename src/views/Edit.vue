@@ -119,6 +119,7 @@
   }
 
   .editProfileDiv{
+    min-height: 61vh;
     margin-left: 25vw;
     margin-top: 10vw;
     background-image: url("src\img\Paper.png")
