@@ -27,8 +27,8 @@
 }
 
 body{
-  min-height: 100vw;
   margin: 0;
+  height: 90vh;
   background-image: url('https://st.depositphotos.com/1911991/1949/i/600/depositphotos_19491395-stock-photo-cork-texture.jpg');    
 }
 /* SignIn Component */
@@ -67,7 +67,7 @@ body{
         font-size: 1.5rem;
     }
     .profile-page{
-      min-height: 100vw;
+      min-height: 90vh;
     }
     .profile-container {
       display: inline-block;
@@ -113,12 +113,6 @@ body{
     flex-direction: row-reverse;
     justify-content: center;
   }
-
-
-  .profile-page{
-    background-image: url('https://st.depositphotos.com/1911991/1949/i/600/depositphotos_19491395-stock-photo-cork-texture.jpg');    
-}
-  
 
 /* NavBar */
 .logout-button {
@@ -455,9 +449,9 @@ button, input {
     font-size:20px
   }
   
-  .profile-page{
+/*   .profile-page{
    margin: 2vw 0 0 0 
-  }
+  } */
 
   .profile-container{
     margin:5vw;

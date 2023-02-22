@@ -11,6 +11,7 @@
       ><input type="text" name="" id="" v-model="updatedAvatar" />
       <button class="buttonChanges" @click="updateProfile">Save changes</button>
     </div>
+    <Footer />
   </template>
   
   <script setup>
@@ -19,6 +20,7 @@
   import { useUserStore } from "../stores/user";
   import Nav from "../components/Nav.vue";
   import { useRouter } from "vue-router";
+  import Footer from "../components/Footer.vue"
   
   const userStore = useUserStore();
   

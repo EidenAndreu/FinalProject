@@ -17,6 +17,7 @@
   </div>
 </div>
 </div>
+<Footer />
 </template>
 
 <script setup>
@@ -25,7 +26,7 @@
   import { useUserStore } from "../stores/user";
   import Nav from '../components/Nav.vue';
   import { useRouter } from "vue-router";
-
+  import Footer from "../components/Footer.vue";
   const userStore = useUserStore();
 
   const loading = ref(false);
