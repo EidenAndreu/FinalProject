@@ -128,7 +128,7 @@
     /* Alinear los campos de nombre, sitio web y avatar en columnas */
     label, input[type="text"] {
       display: block;
-      width: 100%;
+      width: 50%;
       margin-bottom: 1rem;
     }
     
@@ -138,9 +138,22 @@
     }
 
     .editProfileDiv {
-  max-width: 600px;
-  margin: 0 auto;
+  /* max-width: 600px; */
+ /*  margin: 0 auto; */
+  margin-top: 5vw;
+    margin-left: 15vw;
+    margin-right: 12vw;
+    display: flex;
+    flex-direction: column;
 }
+input[type="text"] {
+    width: 80%;
+    min-width: 50vw;
+    box-sizing: border-box;
+    
+}
+
+
   }
   
  </style>
