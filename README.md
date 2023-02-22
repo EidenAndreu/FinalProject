@@ -151,13 +151,14 @@ Para controlar las versiones, hemos utilizado esta plataforma (GitHub). Esto nos
 - [x] Footer
 - [x] CSS Menu hamburger
 - [x] README
+- [x] Preparar presentación 
 
 
 #### Day Eight
 
 ###### Jueves 23, Febrero 2023
 - [ ] Limpiar código
-- [ ] Preparar presentación 
+
 
 #### Day Nine
 
