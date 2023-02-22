@@ -172,11 +172,14 @@ Para controlar las versiones, hemos utilizado esta plataforma (GitHub). Esto nos
 ## Acerca
 
 Me llamo Eiden Andrés y tengo un perfil bastante polivalente: soy Administrativo, Integrador Social y Desarrollador Front-End Junior.
+
 E-mail de contacto: eidenreinaldo@gmail.com
+
 LinkedIn: https://www.linkedin.com/in/eidenreinaldo
+
 GitHub: https://github.com/EidenAndreu
 
-Link de presentación: 
+Link de presentación: https://www.canva.com/design/DAFbUomPRdA/J5nKCDTZdG6vaTCBfa-Log/view?utm_content=DAFbUomPRdA&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
