@@ -157,14 +157,14 @@ Para controlar las versiones, hemos utilizado esta plataforma (GitHub). Esto nos
 #### Day Eight
 
 ###### Jueves 23, Febrero 2023
-- [ ] Limpiar código
+- [x] Limpiar código
 
 
 #### Day Nine
 
 ###### Viernes 17, Febrero 2023
 
-- [ ] Presentación del proyecto
+- [x] Presentación del proyecto
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
