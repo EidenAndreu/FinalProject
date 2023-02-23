@@ -27,11 +27,12 @@
 }
 
 .aleixGuapo{
-  min-height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
+
 body{
   margin: 0;
   height: 90vh;
@@ -509,6 +510,6 @@ h1, h3{
   flex-direction: column;
   justify-content: center;
   margin-bottom: 0;
-  width: 100%;
+  /* width: 100; */
 }
 }
