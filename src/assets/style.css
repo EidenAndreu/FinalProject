@@ -75,6 +75,9 @@ body{
     .profile-page{
       min-height: 90vh;
     }
+
+    /* Profile */
+
     .profile-container {
       display: inline-block;
       padding: 2vw;
@@ -142,12 +145,7 @@ body{
     font-size: 0.75vw;
     font-weight: bold;
     font-family: var(--otherText);
-    /* 
-    text-shadow: 1px 1px 0px #000, -1px -1px 0px #000; */
 }
-
-
-
 
 .navBtn{
     text-decoration: none;
@@ -165,6 +163,7 @@ body{
     border-radius: 0 0 2vw 0 ;
 }
  
+/* Add task */
 h1 {
     font-family: var(--fontFamShantell);
     font-size: 1.5vw;
@@ -198,7 +197,6 @@ h2{
     font-family: var(--fontFamShantell);
     color:red
 }
-/* SignUp Component */
 
 /* Home view */
 
@@ -218,11 +216,6 @@ h2{
   margin-bottom: 5vw;
   
 }
-
-/* .inputGroup, .input-field{
-    box-sizing:content-box;
-} */
-
 
 .content{
     
@@ -246,13 +239,12 @@ h2{
 }
 
 button {
- /* font-size: 16px; */
  padding: 0.5vw 0.5vw;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  /* margin: 5px; */
 }
+
 button.completed {
   background-color: green;
   color: white;
@@ -268,7 +260,6 @@ button.delete {
   color: white;
 }
 
-/* Account View */
 
 .addTaskContainer {
   display: flex;
@@ -325,8 +316,6 @@ button.delete {
   flex-direction: column;
 }
 .itemBtns{
-/*    display: flex;
-   flex-direction: row; */
    display:flex;
    align-content: stretch;
    justify-content: space-around;
@@ -353,7 +342,6 @@ button, input {
     display: flex;
   height: 100%;
   width: 98%;
-    /* padding: 0 3rem */
 }
 
 .container img{
@@ -385,7 +373,6 @@ button, input {
   .footer {
     display:flex;
     flex-direction: column;
-    /* position: fixed; */
     left: 0;
     bottom: 0;
     margin-top:2vw;
@@ -400,10 +387,6 @@ button, input {
   /* ------------------------- Smaller than 766px (mobile) ------------------------- */
 @media (max-width: 766px) {
 
-  /* .wrapper{
-    min-height: 100%;
-  } */
-  /* Nav */
   .navBar{
     margin-top:2vw
   }
@@ -419,15 +402,7 @@ button, input {
   .input-field {
     box-sizing:content-box;
     font-family: Arial, Helvetica, sans-serif;
-    /* padding: 15vw */
 }
-
-/* .button{
-  margin-right:0;
-} */
-/* .inputGroup{
-  padding:10vw
-} */
 
 
   /* task item */
@@ -452,11 +427,7 @@ button, input {
     }
 
     /* NavBar */
-/* nav{
-   background-color: #bb6841c5;
-   
-}
- */
+
 .navRouters{
     display:flex;
     flex-direction: column;
@@ -464,8 +435,7 @@ button, input {
     font-size: 2vw;
     font-weight: bold;
     font-family: var(--otherText);
-    /* 
-    text-shadow: 1px 1px 0px #000, -1px -1px 0px #000; */
+  
 }
 
 
@@ -479,14 +449,11 @@ button, input {
   }
 
   .navRouters {
-    /* background-color: lightgray; */
     gap: 2vw;
     font-size:20px
   }
-  
-/*   .profile-page{
-   margin: 2vw 0 0 0 
-  } */
+
+ /*  Profile */
 
   .profile-container{
     margin:5vw;
@@ -498,6 +465,8 @@ button, input {
     margin-left: -1.50vw;
     width: 40vw;
   }
+
+  /* Home */
 
 .edit-button{
   margin-right: 0;
