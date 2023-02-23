@@ -64,22 +64,20 @@ Tener un archivo README.md bien estructurado y bien documentado también puede s
 
 ## Acerca del Proyecto
 
-Este proyecto ha sido creado en VUE con los lenguajes HTML, CSS y JavaScript, utilizando Routers y Pinia, con el propósito de poner en práctica los conocimientos adquiridos a lo largo de estas tres semanas de Bootcamp simulando la elaboración de una página web de empresa.
+Este proyecto ha sido creado en VUE con los lenguajes HTML, CSS y JavaScript, utilizando Routers y Pinia, con el propósito de poner en práctica los conocimientos adquiridos a lo largo de estas tres semanas de Bootcamp, creando una aplicación web de tareas.
 
-Para navegar por la página web hay distintas formas:
-En la barra de navegación tienes la posibilidad de acceder a las secciones de forma directa sin hacer scroll.
-Además, en cada sección hay habilitados botones por si el visitante tiene interés en conocer más a fondo aspectos de nuestra empresa.
-Hay una opción de hacer scroll top hasta arriba del todo de la página.
+Para entrar en la aplicación es necesario estar registrado, ya que los datos insertados se guardarán en la base de datos Supabase. Es por ello que el acceso está limitado a usuarios con cuenta.
 
+Desde la página principal se puede navegar hasta el perfil, en el cual el usuario puede añadir su nombre, un website, una foto y ver el e-mail con el que ha sido registrado.
 
-Este proyecto ha sido desarrollado por Eiden Andrés Reinaldo.
+En el "Task Manager", que funciona desde el Home, podemos crear, editar y eliminar tareas, así como marcarlas como completadas.
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Construido Con
 
-Este proyecto ha sido desarrollado con HTML, CSS y JavaScript. Además, hemos aprovechado la tecnologia de Supabase para crear y mantener una base de datos y añadir la opción de registrarse y logearse.
+Este proyecto ha sido desarrollado con VUE (CSS, HTML, JS, Pinia). Además, hemos aprovechado la tecnologia de Supabase para crear y mantener una base de datos y añadir la opción de registrarse y logearse.
 
 Para controlar las versiones, hemos utilizado esta plataforma (GitHub). Esto nos ha ayudado a trabajar de forma síncrona y asíncrona de manera complementaria.
 
@@ -152,23 +150,21 @@ Para controlar las versiones, hemos utilizado esta plataforma (GitHub). Esto nos
 - [x] Responsive del edit account
 - [x] Footer
 - [x] CSS Menu hamburger
+- [x] README
+- [x] Preparar presentación 
 
 
 #### Day Eight
 
 ###### Jueves 23, Febrero 2023
-- [ ] README
-- [ ] Presentación 
+- [ ] Limpiar código
+
 
 #### Day Nine
 
 ###### Viernes 17, Febrero 2023
 
-#### Day Ten
-
-###### Lunes 20, Febrero 2023
-
-
+- [ ] Presentación del proyecto
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -176,20 +172,35 @@ Para controlar las versiones, hemos utilizado esta plataforma (GitHub). Esto nos
 
 ## Acerca
 
-Eiden Andreu (25), administrativo e integrador social, así como estudiante del Bootcamp Front-End de IronHack Barcelona.
-email de contacto: eidenreinaldo@gmail.com
+Me llamo Eiden Andrés y tengo un perfil bastante polivalente: soy Administrativo, Integrador Social y Desarrollador Front-End Junior.
+
+E-mail de contacto: eidenreinaldo@gmail.com
+
+LinkedIn: https://www.linkedin.com/in/eidenreinaldo
+
 GitHub: https://github.com/EidenAndreu
 
-
-Link de presentación: 
+Link de presentación: https://www.canva.com/design/DAFbUomPRdA/J5nKCDTZdG6vaTCBfa-Log/view?utm_content=DAFbUomPRdA&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- ACKNOWLEDGMENTS -->
 
-## agradecimientos
+## Agradecimientos
 
+Eternamente agradecido a los profesores de Ironhack (Diego, Aleix y Jarko) por todos los conocimientos recibidos a lo largo de estas seis semanas, la implicación y la paciencia.
+
+A mis compañeros/as del BootCamp, esta experiencia no hubiese sido tan enriquecedora sin vosotros/as.
+
+Especial agradecimiento a:
+
+- Ruben, por todo.
+- Andrea, por todos estos días al pie del cañón en Zoom.
+- Aina, por ofrecerse y ayudarme cuando me invadía la desesperación con el hamburger menu.
+- Xavi, Karen y Ester, por las mil horas extras después de clase para seguir avazando en el proyecto en compañía.
+- Belén, por las idas y venidos a la sala, las risas y los malos tragos compartidos.
+- Quim, Aleix y Andoni, por estar dispuestos a ayudar.
 
 
 
@@ -197,8 +208,11 @@ Link de presentación:
 
 ## Desafío Técnico
 
+El desafío de este proyecto ha sido no partir de cero, sino tener que adaptarnos a un código tal como tendríamos que hacer si entrasemos a trabajar en una empresa. Antes de empezar tuve que leer y entender el código que había, que no era otro que la conexión con Supabase y una plantilla sencilla de lo que se pedía en el Home.
+
+Además, la aplicación del CSS ha resultado "curiosa", cuanto menos. Utilizar una sola hoja de estilo para todo el proyecto me ha traído algún que otro quebradero de cabeza, pero todo resultó ser cuestión de clases.
 
 
 ## Grande Error
 
-
+El Hamburger Menu ha sido mi gran logro en este proyecto. Cuando conseguí hacerlo, debía decidir si quería que el NavBar apareciese en versión móvil o pc, pero no se me mostraba en los dos. Con ayuda de mis compañeras, conseguimos que se viera como en el resultado final.
