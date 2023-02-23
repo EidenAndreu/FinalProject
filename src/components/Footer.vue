@@ -14,12 +14,26 @@
   
   <style>
 
-  footer{
-    margin-bottom: 0;
-    background-color: var(--color5)
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color5);
+  padding: 10px;
+  font-size: 1.2rem;
+}
+
+.footer p {
+  margin: 0;
+}
+
+@media (max-width: 600px) {
+  .footer {
+    flex-direction: column;
+    justify-content: center;
   }
-  p{
-    text-align: center;
-  }
+}
+
   </style>
   
