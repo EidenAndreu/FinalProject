@@ -536,7 +536,7 @@ h1, h3{
 /* Footer  */
 
 .footer {
-  position:fixed;
+  position:sticky;
   flex-direction: column;
   justify-content: center;
   margin-bottom: 0;
